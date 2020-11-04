@@ -1,2 +1,6 @@
-# appLanguageTool
+# LanguageTool
 基于Python编写，根据基准语言进行对多语言检测，比如基准语言是英语，然后通过多语言资源文件对德语/法语等多语言检测对比，Android端是对strings.xml文件检查，Ios端是对Localizable.strings多语言资源文件对比检查，以达到快速冒烟测试的作用
+
+原理：
+1.通过基准语言寻找对应语言的key值
+2.通过寻找的key值在需要检测多语言的资源文件进行对比（和翻译文案对比）
